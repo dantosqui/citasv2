@@ -1,0 +1,22 @@
+.quienes-somos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fffde7; /* Color de fondo amarillo claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .quienes-somos-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Color de texto */
+  }
+  
+  .quienes-somos-container p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffeb3b; /* Color de la primera letra */
+  }
+  
