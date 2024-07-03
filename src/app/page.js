@@ -1,26 +1,23 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import './home.css';
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-container">
       <h1>Bienvenido a Nuestra Página</h1>
       <nav>
-        <ul>
+        <ul className="nav-links">
           <li>
-            <Link href="/quienes-somos">
-              Quienes somos
-            </Link>
+            <Link href="/quienes-somos">Quienes somos</Link>
           </li>
           <li>
-            <Link href="/reservas">
-              Reservas
-            </Link>
+            <Link href="/reservas">Reservas</Link>
           </li>
           <li>
-            <Link href="/contacto">
-              contacto
-            </Link>
+            <Link href="/contacto">Contacto</Link>
           </li>
         </ul>
       </nav>
