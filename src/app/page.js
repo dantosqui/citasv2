@@ -5,9 +5,12 @@ import Link from 'next/link';
 import './home.css';
 
 export default function Home() {
+  const username = typeof window !== 'undefined' ? localStorage.getItem('username') : null;
+
   return (
     <div className="home-container">
       <h1>Bienvenido a Nuestra Página</h1>
+      {username && <h1>{username}</h1>}
       <nav>
         <ul className="nav-links">
           <li>
@@ -18,6 +21,9 @@ export default function Home() {
           </li>
           <li>
             <Link href="/contacto">Contacto</Link>
+          </li>
+          <li>
+            <Link href="/login">Iniciar sesion</Link>
           </li>
         </ul>
       </nav>
